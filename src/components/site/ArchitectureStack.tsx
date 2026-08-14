@@ -25,11 +25,12 @@ export function ArchitectureStack({ layers }: { layers: readonly Layer[] }) {
               </div>
             </div>
             {i < layers.length - 1 && (
-              <div className="flex h-10 items-center justify-center" aria-hidden="true">
-                <span className="h-full w-px bg-border" />
-                <span className="absolute font-mono text-xs text-load">↓</span>
+              <div className="flex h-10 flex-col items-center justify-center" aria-hidden="true">
+                <span className="h-4 w-px bg-border" />
+                <span className="font-mono text-xs text-load">↓</span>
               </div>
             )}
+
           </div>
         );
       })}
