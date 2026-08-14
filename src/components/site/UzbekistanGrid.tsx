@@ -79,9 +79,10 @@ export function UzbekistanGrid() {
       <path d={UZ_OUTLINE} fill="url(#uzhatch)" stroke="var(--muted-foreground)" strokeWidth="1.25" />
 
       {LINES.map(([a, b, kv]) => {
-        const from = byId[a];
-        const to = byId[b];
+        const from = byId[a]!;
+        const to = byId[b]!;
         return (
+
           <g key={`${a}-${b}`}>
             <line
               x1={from.x}
