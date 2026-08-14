@@ -56,7 +56,8 @@ const UZ_OUTLINE =
   "M96 150 L120 96 L182 74 L236 92 L268 76 L318 96 L352 78 L398 104 L436 96 L470 120 L520 118 L556 142 L600 132 L636 142 L664 120 L706 112 L742 132 L790 152 L836 176 L822 208 L780 216 L742 198 L700 206 L668 190 L630 200 L596 190 L560 214 L520 226 L500 258 L520 300 L498 336 L468 356 L486 402 L472 442 L442 436 L424 396 L394 356 L358 330 L318 306 L272 298 L232 274 L196 254 L168 226 L128 206 L100 182 Z";
 
 export function UzbekistanGrid() {
-  const byId = Object.fromEntries(NODES.map((n) => [n.id, n]));
+  const byId: Record<string, Node> = Object.fromEntries(NODES.map((n) => [n.id, n]));
+
 
   return (
     <svg viewBox="0 0 900 480" className="h-auto w-full" role="img" aria-label="Power grid topology of Uzbekistan with generation nodes and transmission corridors">
