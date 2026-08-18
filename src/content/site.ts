@@ -1,6 +1,163 @@
-export type Lang = "ru" | "uz";
+export type Lang = "en" | "ru" | "uz";
 
 export const CONTENT = {
+  en: {
+    langLabel: "EN",
+    nav: {
+      about: "About",
+      problem: "Problem",
+      approach: "Approach",
+      ai: "What AI does",
+      architecture: "Architecture",
+      result: "Outcome",
+    },
+    header: {
+      tagline: "Intelligent layer for the power system",
+    },
+    hero: {
+      eyebrow: "Power system of Uzbekistan",
+      title: "AI platform for intelligent management of the energy flow",
+      lead: "Energo Flow AI is a concept of an intelligent layer on top of the existing energy infrastructure: from data to decision, from decision to result.",
+      motto: ["Forecast.", "Coordinate.", "Optimise."],
+      ctaPrimary: "About the project",
+      ctaSecondary: "Solution architecture",
+    },
+    about: {
+      eyebrow: "About the project",
+      title: "A platform for forecasting, analysing and coordinating energy resources",
+      body: "The system brings together data on consumption, solar and wind generation, weather, smart meter readings, infrastructure condition and energy storage into a single picture.",
+      quote:
+        "Do not wait for an energy problem to appear — predict it and take the optimal decision in advance",
+      sourcesLabel: "Data sources",
+      sources: [
+        "Energy consumption",
+        "Solar and wind generation",
+        "Weather conditions",
+        "Smart meters",
+        "Grid infrastructure",
+        "Energy storage",
+      ],
+    },
+    problem: {
+      eyebrow: "Problem",
+      title: "The country's power system is changing rapidly",
+      items: [
+        "Growing electricity consumption",
+        "Rising industrial load",
+        "Expansion of solar and wind generation",
+        "Dependence of renewables on weather",
+        "Growth of energy storage systems",
+        "High load on individual grid segments",
+        "Need for infrastructure modernisation",
+        "Energy losses in transmission and distribution",
+      ],
+    },
+    approach: {
+      eyebrow: "Approach",
+      title: "From production to coordination",
+      body: "The task is not only to produce more electricity, but to coordinate the entire energy flow efficiently.",
+      stages: ["Generation", "Transmission", "Storage", "Consumption"],
+      note: "Energo Flow AI acts as an intelligent layer on top of the existing energy infrastructure.",
+    },
+    ai: {
+      eyebrow: "What AI does",
+      title: "Seven key functions based on unified data",
+      items: [
+        "Forecasts electricity consumption",
+        "Forecasts renewable generation",
+        "Detects anomalies and overloads",
+        "Predicts equipment failures",
+        "Optimises the use of storage systems",
+        "Determines the optimal distribution",
+        "Reduces peak loads and losses",
+      ],
+    },
+    architecture: {
+      eyebrow: "Solution architecture",
+      title: "From data to decision",
+      layers: [
+        {
+          label: "Data layer",
+          items: ["Smart Meters", "Consumption", "Solar / Wind generation", "Weather"],
+        },
+        {
+          label: "Energo Flow AI",
+          items: ["Forecasting", "Anomaly Detection", "Optimisation", "Risk Prediction"],
+        },
+        { label: "Decision Engine", items: ["Decision making"] },
+        { label: "Control action", items: ["Generation", "Storage", "Consumption"] },
+      ],
+    },
+    forecast: {
+      eyebrow: "Forecasting",
+      title: "The core of the platform — predicting demand and generation before imbalance occurs",
+      cards: [
+        {
+          title: "Consumption",
+          body: "Electricity demand forecast by region and industry, accounting for seasonality and growing industrial load.",
+        },
+        {
+          title: "Renewable generation",
+          body: "Solar and wind output forecast based on weather conditions and meteorological data.",
+        },
+      ],
+      note: "The forecast is calculated continuously and updated as new data arrives from sensors and weather stations.",
+    },
+    risks: {
+      eyebrow: "Risks and anomalies",
+      title: "Early warning instead of reacting to an outage",
+      cards: [
+        {
+          title: "Anomalies",
+          body: "Detection of deviations in consumption and generation that signal faults or losses.",
+        },
+        {
+          title: "Overloads",
+          body: "Early warning about potential overloads of individual grid segments.",
+        },
+        {
+          title: "Equipment failures",
+          body: "Prediction of likely infrastructure failures before an outage occurs.",
+        },
+      ],
+    },
+    optimization: {
+      eyebrow: "Energy flow optimisation",
+      title: "The Decision Engine acts in three directions simultaneously",
+      cards: [
+        {
+          title: "Storage",
+          body: "Optimal use of energy storage systems depending on the demand forecast.",
+        },
+        {
+          title: "Distribution",
+          body: "Determining the optimal distribution of consumption across regions and consumers.",
+        },
+        {
+          title: "Peak loads",
+          body: "Reducing peak loads and losses in transmission and distribution.",
+        },
+      ],
+    },
+    result: {
+      eyebrow: "Outcome",
+      title: "An optimised energy flow at every stage — from generation to consumption",
+      items: [
+        { title: "Fewer losses", body: "in transmission and distribution" },
+        { title: "Sharper forecast", body: "of demand and renewable output" },
+        { title: "Lower peaks", body: "of load on the grid" },
+        { title: "Earlier signal", body: "about risks and failures" },
+      ],
+    },
+    closing: {
+      title: "An intelligent layer above the power system of Uzbekistan",
+      body: "From data to decision, from decision to result.",
+    },
+    footer: {
+      note: "Platform concept. The material is descriptive in nature.",
+    },
+  },
+
   ru: {
     langLabel: "RU",
     nav: {
