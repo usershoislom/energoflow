@@ -28,7 +28,7 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
-  const [lang, setLang] = useState<Lang>("ru");
+  const [lang, setLang] = useState<Lang>("en");
   const t = CONTENT[lang];
 
   return (
