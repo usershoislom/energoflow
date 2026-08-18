@@ -38,7 +38,7 @@ export function SiteHeader({ lang, onLang }: { lang: Lang; onLang: (l: Lang) => 
         </nav>
 
         <div className="ml-auto flex items-center border border-border">
-          {(["ru", "uz"] as const).map((l) => (
+          {(["en", "ru", "uz"] as const).map((l) => (
             <button
               key={l}
               type="button"
